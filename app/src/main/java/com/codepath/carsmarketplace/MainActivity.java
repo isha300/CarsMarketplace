@@ -14,15 +14,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        click = (Button) findViewById(R.id.button);
-        data = (TextView) findViewById(R.id.button);
-
-        click.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                fetchData process = new fetchData();
-                process.execute();
-            }
-        });
+//        click.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                fetchData process = new fetchData();
+//                process.execute();
+//            }
+//        });
     }
 }
