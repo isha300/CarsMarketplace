@@ -33,11 +33,10 @@ public class fetchData extends AsyncTask<Void,Void,Void> {
             }
 
             JSONArray JA = new JSONArray(data);
-            for(int i = 0; i < JA.length(); i++) {
+            for(int i = 0; i < 3; i++) {
                 JSONObject JO = (JSONObject) JA.get(i);
-                singleParsed = "Name: " + JO.get("bodyType") + "\n";
+                singleParsed = "Name: " + JO.get("exteriorColorName") + "\n";
             }
-
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
