@@ -7,19 +7,19 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button click;
+    final TextView black = findViewById(R.id.black);
     public static TextView data;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        click.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                fetchData process = new fetchData();
-//                process.execute();
-//            }
-//        });
+        black.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fetchData process = new fetchData();
+                process.execute();
+            }
+        });
     }
 }
