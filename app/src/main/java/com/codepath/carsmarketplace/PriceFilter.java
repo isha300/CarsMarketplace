@@ -43,6 +43,8 @@ public class PriceFilter extends AsyncTask<Void,Void,Void> {
                             + "$" + JO.get("price") + "\n" +
                             "Rating: " + JO.get("sellerRating") + "\n" +
                             "Click on link to view image: " + JO.get("mainPictureUrl") + "\n" +
+                            "View more details on this car: " + "https://mock-cars-api.herokuapp.com/api/v1/cars/" +
+                            JO.get("id") + "\n" +
                             "___________________________________________________\n";
                     dataParsed = dataParsed + singleParsed;
                 }

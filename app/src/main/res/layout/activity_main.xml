@@ -584,12 +584,12 @@
         android:visibility="invisible"
         app:srcCompat="@drawable/ic_dismiss" />
 
-    <ImageView
-        android:id="@+id/loading"
-        android:layout_width="41dp"
-        android:layout_height="39dp"
-        android:layout_centerInParent="true"
-        android:visibility="invisible"
-        app:srcCompat="@drawable/ic_loading" />
+        <ImageView
+            android:id="@+id/loading"
+            android:layout_width="85dp"
+            android:layout_height="98dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_loading" />
 
 </RelativeLayout>

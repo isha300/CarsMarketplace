@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
     public static CheckBox hundredEighty;
     public static CheckBox twoHundred;
     public static TextView colorbrowse;
+    public static String id;
+    public static String content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,12 +52,11 @@ public class MainActivity extends AppCompatActivity {
 
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
-        String id = "";
-        String content = "";
-
         data = (TextView) findViewById(R.id.fetched);
         color = "";
         bodyType = "";
+        id = "";
+        content = "";
         loading = (ImageView) findViewById(R.id.loading);
         advanced = (Button) findViewById(R.id.advanced);
         dismiss = (ImageView) findViewById(R.id.dismiss);
@@ -120,12 +121,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 color = "Gray";
+                id = "graybtn";
+                content = "button";
                 fetchData process = new fetchData();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
             }
         });
-
         bluebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -133,9 +135,10 @@ public class MainActivity extends AppCompatActivity {
                 fetchData process = new fetchData();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "bluebtn";
+                content = "button";
             }
         });
-
         whitebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -143,9 +146,10 @@ public class MainActivity extends AppCompatActivity {
                 fetchData process = new fetchData();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "whitebtn";
+                content = "button";
             }
         });
-
         blackbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -153,9 +157,10 @@ public class MainActivity extends AppCompatActivity {
                 fetchData process = new fetchData();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "blackbtn";
+                content = "button";
             }
         });
-
         brownbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -163,9 +168,10 @@ public class MainActivity extends AppCompatActivity {
                 fetchData process = new fetchData();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "brownbtn";
+                content = "button";
             }
         });
-
         redbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -173,9 +179,10 @@ public class MainActivity extends AppCompatActivity {
                 fetchData process = new fetchData();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "redbtn";
+                content = "button";
             }
         });
-
         silverbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -183,9 +190,10 @@ public class MainActivity extends AppCompatActivity {
                 fetchData process = new fetchData();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "silverbtn";
+                content = "button";
             }
         });
-
         yellowbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -193,9 +201,10 @@ public class MainActivity extends AppCompatActivity {
                 fetchData process = new fetchData();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "yellowbtn";
+                content = "button";
             }
         });
-
         greenbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -203,9 +212,10 @@ public class MainActivity extends AppCompatActivity {
                 fetchData process = new fetchData();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "greenbtn";
+                content = "button";
             }
         });
-
         adv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -213,7 +223,6 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(intent);
             }
         });
-
         wagonbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -221,9 +230,10 @@ public class MainActivity extends AppCompatActivity {
                 BodyTypeFilter process = new BodyTypeFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "wagontbn";
+                content = "button";
             }
         });
-
         coupebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -231,9 +241,10 @@ public class MainActivity extends AppCompatActivity {
                 BodyTypeFilter process = new BodyTypeFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "coupebtn";
+                content = "button";
             }
         });
-
         hatchbackbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -241,9 +252,10 @@ public class MainActivity extends AppCompatActivity {
                 BodyTypeFilter process = new BodyTypeFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "hatchbackbtn";
+                content = "button";
             }
         });
-
         convertiblebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -251,9 +263,10 @@ public class MainActivity extends AppCompatActivity {
                 BodyTypeFilter process = new BodyTypeFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "convertiblebtn";
+                content = "button";
             }
         });
-
         minivanbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -261,9 +274,10 @@ public class MainActivity extends AppCompatActivity {
                 BodyTypeFilter process = new BodyTypeFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "minivanbtn";
+                content = "button";
             }
         });
-
         pickupbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -271,9 +285,10 @@ public class MainActivity extends AppCompatActivity {
                 BodyTypeFilter process = new BodyTypeFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "pickupbtn";
+                content = "button";
             }
         });
-
         sedanbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -281,9 +296,10 @@ public class MainActivity extends AppCompatActivity {
                 BodyTypeFilter process = new BodyTypeFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "sedanbtn";
+                content = "button";
             }
         });
-
         vanbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -291,9 +307,10 @@ public class MainActivity extends AppCompatActivity {
                 BodyTypeFilter process = new BodyTypeFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "vanbtn";
+                content = "button";
             }
         });
-
         minivanbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -301,9 +318,10 @@ public class MainActivity extends AppCompatActivity {
                 BodyTypeFilter process = new BodyTypeFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "minivanbtn";
+                content = "button";
             }
         });
-
         suvbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -311,9 +329,10 @@ public class MainActivity extends AppCompatActivity {
                 BodyTypeFilter process = new BodyTypeFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "suvbtn";
+                content = "button";
             }
         });
-
         twenty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -321,9 +340,10 @@ public class MainActivity extends AppCompatActivity {
                 PriceFilter process = new PriceFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "twenty";
+                content = "checkbox";
             }
         });
-
         forty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -331,9 +351,10 @@ public class MainActivity extends AppCompatActivity {
                 PriceFilter process = new PriceFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "forty";
+                content = "checkbox";
             }
         });
-
         sixty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -341,9 +362,10 @@ public class MainActivity extends AppCompatActivity {
                 PriceFilter process = new PriceFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "sixty";
+                content = "checkbox";
             }
         });
-
         eighty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -351,9 +373,10 @@ public class MainActivity extends AppCompatActivity {
                 PriceFilter process = new PriceFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "eighty";
+                content = "checkbox";
             }
         });
-
         hundred.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -361,9 +384,10 @@ public class MainActivity extends AppCompatActivity {
                 PriceFilter process = new PriceFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "hundred";
+                content = "checkbox";
             }
         });
-
         hundredTwenty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -371,9 +395,10 @@ public class MainActivity extends AppCompatActivity {
                 PriceFilter process = new PriceFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "hundredTwenty";
+                content = "checkbox";
             }
         });
-
         hundredForty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -381,9 +406,10 @@ public class MainActivity extends AppCompatActivity {
                 PriceFilter process = new PriceFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "hundredForty";
+                content = "checkbox";
             }
         });
-
         hundredSixty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -391,9 +417,10 @@ public class MainActivity extends AppCompatActivity {
                 PriceFilter process = new PriceFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "hundredSixty";
+                content = "checkbox";
             }
         });
-
         hundredEighty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -401,9 +428,10 @@ public class MainActivity extends AppCompatActivity {
                 PriceFilter process = new PriceFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "hundredEighty";
+                content = "checkbox";
             }
         });
-
         twoHundred.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -411,6 +439,8 @@ public class MainActivity extends AppCompatActivity {
                 PriceFilter process = new PriceFilter();
                 process.execute();
                 loading.setVisibility(View.VISIBLE);
+                id = "twoHundred";
+                content = "checkbox";
             }
         });
 
