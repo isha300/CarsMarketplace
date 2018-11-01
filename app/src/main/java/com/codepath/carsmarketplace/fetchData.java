@@ -33,9 +33,12 @@ public class fetchData extends AsyncTask<Void,Void,Void> {
             }
 
             JSONArray JA = new JSONArray(data);
-            for(int i = 0; i < 3; i++) {
+            for(int i = 0; i < JA.length(); i++) {
                 JSONObject JO = (JSONObject) JA.get(i);
-                singleParsed = "Name: " + JO.get("exteriorColorName") + "\n";
+                if (JO.get("exteriorColorName").equals(MainActivity.color)) {
+                    singleParsed = JO.get("carYear") + " " + JO.get("makeName") + " " + "" + "\n";
+                    dataParsed = dataParsed + singleParsed;
+                }
             }
         } catch (MalformedURLException e) {
             e.printStackTrace();
@@ -50,6 +53,6 @@ public class fetchData extends AsyncTask<Void,Void,Void> {
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
-        MainActivity.data.setText(this.data);
+        MainActivity.data.setText(this.dataParsed);
     }
 }

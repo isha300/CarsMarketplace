@@ -233,6 +233,8 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/blue"
         android:layout_toEndOf="@+id/colorbrowse"
+        android:clickable="true"
+        android:onClick="onClick"
         android:background="#A9A9A9"
         tools:background="#808080" />
 
@@ -410,6 +412,15 @@
             android:background="#99badd"
             android:hint="Fetched Text Here" />
     </ScrollView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="237dp"
+        android:layout_toEndOf="@+id/convertible"
+        android:text="Button" />
 
 </RelativeLayout>
 </ScrollView>
