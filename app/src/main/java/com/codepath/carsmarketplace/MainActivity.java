@@ -17,13 +17,19 @@ public class MainActivity extends AppCompatActivity {
         data = (TextView) findViewById(R.id.fetched);
         final Button adv = findViewById(R.id.advanced);
 
+//        adv.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                fetchData process = new fetchData();
+//                process.execute();
+//            }
+//        });
+
         adv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fetchData process = new fetchData();
-                process.execute();
-//                Intent intent = new Intent(MainActivity.this, FilteredCars.class);
-//                MainActivity.this.startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, FilteredCars.class);
+                MainActivity.this.startActivity(intent);
             }
         });
     }
