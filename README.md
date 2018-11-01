@@ -10,7 +10,7 @@ Advanced search page and filter by body type (sedan)
 
 Filter by color (blue)
 
-<img src="https://media.giphy.com/media/3eP9BoFAnL2edFrlr7/giphy.gif" width=200><br>
+<img src="https://media.giphy.com/media/4a4w3azGWpBy9StsFi/giphy.gif" width=200><br>
 
 Filter by price range ($40000-$60000)
 
