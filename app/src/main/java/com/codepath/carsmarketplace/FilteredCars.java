@@ -21,6 +21,13 @@ public class FilteredCars extends AppCompatActivity {
         setContentView(R.layout.activity_filtered_cars);
         Spinner staticSpinner = (Spinner) findViewById(R.id.spinner1);
 
+        findViewById(R.id.adismiss).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
         // Create an ArrayAdapter using the string array and a default spinner
         ArrayAdapter<CharSequence> staticAdapter = ArrayAdapter.
                 createFromResource(this, R.array.make_array,
