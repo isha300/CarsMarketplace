@@ -10,7 +10,10 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 public class MainActivity extends AppCompatActivity {
+    private FirebaseAnalytics mFirebaseAnalytics;
     public static TextView data;
     public static Button advanced;
     public static String color;
@@ -40,11 +43,12 @@ public class MainActivity extends AppCompatActivity {
     public static CheckBox twoHundred;
     public static TextView colorbrowse;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         data = (TextView) findViewById(R.id.fetched);
         color = "";
