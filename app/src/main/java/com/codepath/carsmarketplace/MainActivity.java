@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
+        String id = "";
+        String content = "";
+
         data = (TextView) findViewById(R.id.fetched);
         color = "";
         bodyType = "";
@@ -419,5 +422,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mIntent);
             }
         });
+
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, id);
+        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, content);
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
     }
 }

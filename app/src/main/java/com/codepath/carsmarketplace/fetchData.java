@@ -72,5 +72,17 @@ public class fetchData extends AsyncTask<Void,Void,Void> {
         MainActivity.yellow.setVisibility(View.INVISIBLE);
         MainActivity.advanced.setVisibility(View.INVISIBLE);
         MainActivity.loading.setVisibility(View.INVISIBLE);
+        MainActivity.colorbrowse.setVisibility(View.INVISIBLE);
+        MainActivity.pricebrowse.setVisibility(View.INVISIBLE);
+        MainActivity.twenty.setVisibility(View.INVISIBLE);
+        MainActivity.forty.setVisibility(View.INVISIBLE);
+        MainActivity.sixty.setVisibility(View.INVISIBLE);
+        MainActivity.eighty.setVisibility(View.INVISIBLE);
+        MainActivity.hundred.setVisibility(View.INVISIBLE);
+        MainActivity.hundredTwenty.setVisibility(View.INVISIBLE);
+        MainActivity.hundredForty.setVisibility(View.INVISIBLE);
+        MainActivity.hundredSixty.setVisibility(View.INVISIBLE);
+        MainActivity.hundredEighty.setVisibility(View.INVISIBLE);
+        MainActivity.twoHundred.setVisibility(View.INVISIBLE);
     }
 }
