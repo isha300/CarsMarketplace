@@ -1,7 +1,7 @@
 # cars-marketplace
 
 ## App Description
-Mobile application integrating an API and Analytics to drive car purchases for the Red Ventures Case Competition.
+Mobile application integrating an API and Firebase for Google Analytics to drive car purchases for the Red Ventures Case Competition
 
 ### App Walkthrough
 Advanced search page and filter by body type (sedan)
